@@ -11,12 +11,11 @@ mkdir /opt/DOC/gravitee
 cd /opt/DOC/gravitee
 
 mkdir -p config
+
 curl -L -O https://raw.githubusercontent.com/gravitee-io/graviteeio-access-management/2.x/docker/compose/docker-compose.yml
 curl -O https://raw.githubusercontent.com/gravitee-io/graviteeio-access-management/2.x/docker/compose/.env
 cd config && { curl -O https://raw.githubusercontent.com/gravitee-io/graviteeio-access-management/2.x/docker/compose/config/nginx.conf ; cd -; }
 
-# (Optional step: pull to ensure that you are running latest images)
 docker-compose pull
 
-# And run...
 docker-compose up
