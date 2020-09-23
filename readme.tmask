@@ -1,0 +1,7 @@
+- "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+
+sudo sysctl -w vm.max_map_count=262144
+
+
+vi /etc/sysctl.conf
+vm.max_map_count=262144
