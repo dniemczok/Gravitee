@@ -7,7 +7,9 @@ vi /etc/sysctl.conf
 vm.max_map_count=262144
 
 mkdir /opt/DOC
+
 mkdir /opt/DOC/gravitee
+
 cd /opt/DOC/gravitee
 
 mkdir -p config
