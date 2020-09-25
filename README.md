@@ -58,11 +58,11 @@ nginx                          1.16-alpine         5fad07aba15a        8 months 
 sysctl -w vm.max_map_count=262144
 
 
-mkdir esdatadir
+mkdir data-elasticsearch
 
-chmod g+rwx esdatadir
+chmod g+rwx data-elasticsearch
 
-chgrp 0 esdatadir
+chgrp 0 data-elasticsearch
 
 
 curl -L https://raw.githubusercontent.com/gravitee-io/gravitee-docker/master/apim/3.x/docker-compose.yml -o "docker-compose.yml"
