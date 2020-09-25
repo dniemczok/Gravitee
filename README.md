@@ -70,3 +70,16 @@ curl -L https://raw.githubusercontent.com/gravitee-io/gravitee-docker/master/api
 docker-compose pull
 
 docker-compose up
+
+
+###
+
+CONTAINER ID        IMAGE                                                 COMMAND                  CREATED              STATUS              PORTS                            NAMES
+ed4043842da3        graviteeio/apim-management-ui:3                       "/docker-entrypoint.…"   About a minute ago   Up 27 seconds       80/tcp, 0.0.0.0:8084->8080/tcp   gio_apim_management_ui
+4a8b6c097238        graviteeio/apim-portal-ui:3                           "/docker-entrypoint.…"   About a minute ago   Up 27 seconds       80/tcp, 0.0.0.0:8080->8080/tcp   gio_apim_portal_ui
+5ae93c235886        graviteeio/apim-management-api:3                      "./bin/gravitee"         2 minutes ago        Up 28 seconds       0.0.0.0:8083->8083/tcp           gio_apim_management_api
+6e1a1b465e63        graviteeio/apim-gateway:3                             "./bin/gravitee"         2 minutes ago        Up 28 seconds       0.0.0.0:8082->8082/tcp           gio_apim_gateway
+acd4799ef42a        mongo:3.6                                             "docker-entrypoint.s…"   2 minutes ago        Up 29 seconds       27017/tcp                        gio_apim_mongodb
+55fbe50c336e        docker.elastic.co/elasticsearch/elasticsearch:7.7.0   "/tini -- /usr/local…"   2 minutes ago        Up 30 seconds       9200/tcp, 9300/tcp               gio_apim_elasticsearch
+
+
