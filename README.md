@@ -22,4 +22,11 @@ cd config && { curl -O https://raw.githubusercontent.com/gravitee-io/graviteeio-
 
 docker-compose pull
 
+### Zmień w docker-compose.yml
+
+- MGMT_API_URL=http://Adress IP:${NGINX_PORT}/am
+- MGMT_UI_URL=http://Adres IP:${NGINX_PORT}/am/ui
+
+
 docker-compose up
+
